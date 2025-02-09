@@ -9,6 +9,8 @@ on:
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Ensure write permissions for the repository contents
 
     steps:
       - uses: actions/checkout@v2
