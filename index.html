@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USD to INR Rates</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 20px;
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff5722;
+            font-size: 2.5em;
+            margin-bottom: 0;
+        }
+
+        .chart-container {
+            position: relative;
+            margin: auto;
+            height: 60vh;
+            width: 80vw;
+        }
+
+        .bank-list {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .bank-list table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 60%;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .bank-list th {
+            background-color: #ff5722;
+            color: #ffffff;
+            padding: 12px;
+            font-size: 1.2em;
+        }
+
+        .bank-list th,
+        .bank-list td {
+            border: 1px solid #444444;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .bank-list td {
+            background-color: #333333;
+            transition: background-color 0.3s;
+        }
+
+        .bank-list td:hover {
+            background-color: #ff9800;
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>USD to INR Rates Over Time</h1>
+    <div class="chart-container">
+        <div id="usdInrChart"></div>
+    </div>
+    <div class="bank-list">
+        <h2>Top 5 Banks with Highest Average Rates</h2>
+        <table id="bankTable">
+            <thead>
+                <tr>
+                    <th>Bank</th>
+                    <th>Average Rate (INR)</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script>
+        // Fetch the data from all_banks_data.json
+        fetch('./all_banks_data.json')
+            .then(response => response.json())
+            .then(data => {
+                const labels = [];
+                const datasets = {};
+                const averageRates = {};
+
+                // Process the data
+                data.historical_data.forEach(entry => {
+                    labels.push(entry.date);
+                    entry.rates.forEach(rate => {
+                        if (!datasets[rate.bank]) {
+                            datasets[rate.bank] = {
+                                x: [],
+                                y: [],
+                                name: rate.bank,
+                                mode: 'lines+markers',
+                                line: { width: 2 },
+                            };
+                            averageRates[rate.bank] = []; // Initialize array for average rates
+                        }
+                        datasets[rate.bank].x.push(entry.date);
+                        datasets[rate.bank].y.push(rate.tt_buy_rate);
+                        averageRates[rate.bank].push(rate.tt_buy_rate); // Collect rates for averaging
+                    });
+                });
+
+                // Prepare data for Plotly
+                const plotData = Object.values(datasets);
+
+                // Create the chart
+                const layout = {
+                    xaxis: {
+                        title: 'Date',
+                        tickangle: -45,
+                        gridcolor: '#444444',
+                        titlefont: { color: '#ffffff' },
+                        tickfont: { color: '#ffffff' },
+                        tickformat: '%b %d, %y'
+                    },
+                    yaxis: {
+                        title: 'Rate (INR)',
+                        gridcolor: '#444444',
+                        titlefont: { color: '#ffffff' },
+                        tickfont: { color: '#ffffff' }
+                    },
+                    paper_bgcolor: '#1e1e1e',
+                    plot_bgcolor: '#1e1e1e',
+                    showlegend: false,
+                    modebar: {
+                        remove: ['toImage', 'resetScale2d', 'zoom2d', 'pan2d', 'select2d', 'lasso2d', 'hoverClosestCartesian', 'hoverCompareCartesian']
+                    }
+                };
+
+                Plotly.newPlot('usdInrChart', plotData, layout);
+
+                // Calculate average rates and sort
+                const averageRatesList = Object.keys(averageRates).map(bank => {
+                    const avgRate = averageRates[bank].reduce((a, b) => a + b, 0) / averageRates[bank].length;
+                    return { bank, avgRate };
+                });
+
+                averageRatesList.sort((a, b) => b.avgRate - a.avgRate); // Sort by average rate in descending order
+
+                // Display top 5 banks
+                const topBanks = averageRatesList.slice(0, 5);
+                const tbody = document.getElementById('bankTable').getElementsByTagName('tbody')[0];
+
+                topBanks.forEach(({ bank, avgRate }) => {
+                    const row = tbody.insertRow();
+                    row.insertCell(0).innerText = bank;
+                    row.insertCell(1).innerText = avgRate.toFixed(2); // Format to 2 decimal places
+                });
+            });
+    </script>
+</body>
+
+</html>
