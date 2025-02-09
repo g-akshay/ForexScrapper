@@ -34,6 +34,8 @@ jobs:
         run: python src/run_all_scrapers.py
 
       - name: Commit and push if changed
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT }} # Use the secret token
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
@@ -41,4 +43,4 @@ jobs:
           mkdir -p src
           touch src/all_banks_data.json
           git add src/all_banks_data.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update forex rates [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update forex rates [skip ci]" && git push https://$GITHUB_TOKEN@github.com/g-akshay/ForexScrapper.git HEAD:main)
