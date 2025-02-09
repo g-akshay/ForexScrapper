@@ -1,0 +1,13 @@
+{
+  "axis": "https://www.axisbank.com/forex-rates",
+  "bob": "https://www.bankofbaroda.in/business-banking/treasury/forex-card-rates",
+  "boi": "https://bankofindia.co.in/forexcard-rate",
+  "canara": "https://canarabank.com/pages/forex-card-rates",
+  "hdfc": "Visit HDFC Bank's forex page for updated currency exchange rates (No specific public link).",
+  "hsbc": "https://www.hsbc.co.in/nri/foreign-exchange-rates/",
+  "icici": "https://www.icicibank.com/corporate/global-markets/forex/forex-card-rate",
+  "idfc": "https://www.idfcfirstbank.com/forex-rate",
+  "iob": "https://www.iob.in/iob_Forex-rates.aspx",
+  "kotak": "https://www.kotak.com/en/rates/forex-rates.html",
+  "yes": "https://www.yesbank.in/api/v1/forex-rates"
+}
