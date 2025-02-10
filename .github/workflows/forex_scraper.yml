@@ -2,8 +2,8 @@ name: Forex Rate Scraper
 
 on:
   schedule:
-    # Run hourly from 8 AM to 6 PM IST on weekdays
-    - cron: "0 2-12 * * 1-5" # UTC times (IST-5:30)
+    # Runs on 10AM, 12pm and 6pm IST
+    - cron: "30 4,6,12 * * *" # Runs at 4:30 AM, 6:30 AM, and 12:30 PM UTC
   workflow_dispatch: # Allows manual trigger
 
 jobs:
