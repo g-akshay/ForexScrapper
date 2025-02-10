@@ -1,1 +1,2 @@
-🔗 Link: https://g-akshay.github.io/ForexScrapper/
+### Forex Scrapper
+##### 🔗 Link: https://g-akshay.github.io/ForexScrapper/
