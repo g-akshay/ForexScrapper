@@ -63,6 +63,8 @@ def get_scraper_class_name(bank):
         return 'ICICIScraper'
     elif bank == 'hsbc':
         return 'HSBCScraper'
+    elif bank == 'sbi':
+        return 'SBIScraper'
     else:
         return f"{bank.upper()}Scraper"
 
@@ -169,9 +171,10 @@ def run_all_scrapers():
     # Separate scrapers by type
     selenium_scrapers = ['kotak', 'iob', 'idfc']  # Selenium-based scrapers
     request_scrapers = [
+        'sbi',
         'canara',
         'hsbc',
-        'icici'
+        'icici',
     ]  # Request-based scrapers
 
     # Initialize bank status tracker
