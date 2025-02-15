@@ -58,7 +58,7 @@ def get_scraper_class_name(bank):
     elif bank == 'canara':
         return 'CanaraScraper'
     elif bank == 'kotak':
-        return 'KotakScraper'  # Changed to match the actual class name
+        return 'KotakScraper'
     elif bank == 'icici':
         return 'ICICIScraper'
     elif bank == 'hsbc':
@@ -186,39 +186,41 @@ def run_all_scrapers():
 
     try:
         with Live(bank_status.get_table(), refresh_per_second=4) as live:
-            # First run Selenium-based scrapers one by one
-            for bank in selenium_scrapers:
-                try:
-                    logging.info(f"Starting {bank.upper()} scraper with dedicated Chrome instance...")
-                    rate = run_selenium_scraper(bank, bank_status)
-                    if rate:
-                        results.append(rate)
-                    live.update(bank_status.get_table())
-                except Exception as e:
-                    logging.error(f"Error running {bank} scraper: {str(e)}")
-                    bank_status.update(bank, "Failed")
-                    live.update(bank_status.get_table())
-                finally:
-                    time.sleep(10)
-
-            # Then run request-based scrapers in parallel
-            with ThreadPoolExecutor(max_workers=len(request_scrapers)) as request_executor:
-                future_to_bank = {
-                    request_executor.submit(run_scraper, bank, bank_status): bank
-                    for bank in request_scrapers
+            # Run Selenium-based scrapers in parallel
+            with ThreadPoolExecutor(max_workers=len(selenium_scrapers)) as selenium_executor:
+                selenium_futures = {
+                    selenium_executor.submit(run_selenium_scraper, bank, bank_status): bank
+                    for bank in selenium_scrapers
                 }
-                futures = list(future_to_bank.keys())
 
-                # Collect results
-                for future in as_completed(future_to_bank, timeout=30):
-                    bank = future_to_bank[future]
+                for future in as_completed(selenium_futures):
+                    bank = selenium_futures[future]
                     try:
-                        rate = future.result(timeout=20)
+                        rate = future.result()
                         if rate:
                             results.append(rate)
                         live.update(bank_status.get_table())
                     except Exception as e:
-                        logging.error(f"Error getting result from {bank}: {str(e)}")
+                        logging.error(f"Error running {bank} scraper: {str(e)}")
+                        bank_status.update(bank, "Failed")
+                        live.update(bank_status.get_table())
+
+            # Run request-based scrapers in parallel
+            with ThreadPoolExecutor(max_workers=len(request_scrapers)) as request_executor:
+                request_futures = {
+                    request_executor.submit(run_scraper, bank, bank_status): bank
+                    for bank in request_scrapers
+                }
+
+                for future in as_completed(request_futures):
+                    bank = request_futures[future]
+                    try:
+                        rate = future.result()
+                        if rate:
+                            results.append(rate)
+                        live.update(bank_status.get_table())
+                    except Exception as e:
+                        logging.error(f"Error running {bank} scraper: {str(e)}")
                         bank_status.update(bank, "Failed")
                         live.update(bank_status.get_table())
 
