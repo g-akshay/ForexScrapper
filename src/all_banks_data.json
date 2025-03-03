@@ -1,6 +1,41 @@
 {
   "historical_data": [
     {
+      "date": "2025-03-03",
+      "rates": [
+        {
+          "bank": "Kotak Bank",
+          "tt_buy_rate": 84.92,
+          "timestamp": "2025-03-03T04:44:14.501059"
+        },
+        {
+          "bank": "Indian Overseas Bank",
+          "tt_buy_rate": 87.01,
+          "timestamp": "2025-03-03T04:44:17.443198"
+        },
+        {
+          "bank": "IDFC First Bank",
+          "tt_buy_rate": 85.92,
+          "timestamp": "2025-03-03T04:44:18.044048"
+        },
+        {
+          "bank": "HSBC",
+          "tt_buy_rate": 85.7,
+          "timestamp": "2025-03-03T04:44:19.373756"
+        },
+        {
+          "bank": "ICICI Bank",
+          "tt_buy_rate": 85.38,
+          "timestamp": "2025-03-03T04:44:20.009135"
+        },
+        {
+          "bank": "Canara Bank",
+          "tt_buy_rate": 87.9175,
+          "timestamp": "2025-03-03T04:44:20.180480"
+        }
+      ]
+    },
+    {
       "date": "2025-03-02",
       "rates": [
         {
@@ -487,41 +522,6 @@
           "bank": "Canara Bank",
           "tt_buy_rate": 87.255,
           "timestamp": "2025-02-17T13:01:10.765466"
-        }
-      ]
-    },
-    {
-      "date": "2025-02-16",
-      "rates": [
-        {
-          "bank": "Kotak Bank",
-          "tt_buy_rate": 84.33,
-          "timestamp": "2025-02-16T12:57:10.528201"
-        },
-        {
-          "bank": "Indian Overseas Bank",
-          "tt_buy_rate": 86.56,
-          "timestamp": "2025-02-16T12:57:13.018619"
-        },
-        {
-          "bank": "IDFC First Bank",
-          "tt_buy_rate": 85.26,
-          "timestamp": "2025-02-16T12:57:13.486976"
-        },
-        {
-          "bank": "HSBC",
-          "tt_buy_rate": 85.19,
-          "timestamp": "2025-02-16T12:57:15.377121"
-        },
-        {
-          "bank": "ICICI Bank",
-          "tt_buy_rate": 84.89,
-          "timestamp": "2025-02-16T12:57:15.879320"
-        },
-        {
-          "bank": "Canara Bank",
-          "tt_buy_rate": 87.425,
-          "timestamp": "2025-02-16T12:57:15.556204"
         }
       ]
     }
