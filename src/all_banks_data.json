@@ -6,32 +6,32 @@
         {
           "bank": "Kotak Bank",
           "tt_buy_rate": 84.92,
-          "timestamp": "2025-03-11T04:45:03.633340"
+          "timestamp": "2025-03-11T06:48:58.236155"
         },
         {
           "bank": "Indian Overseas Bank",
-          "tt_buy_rate": 87.06,
-          "timestamp": "2025-03-11T04:45:06.713688"
+          "tt_buy_rate": 87.04,
+          "timestamp": "2025-03-11T06:49:00.278317"
         },
         {
           "bank": "IDFC First Bank",
           "tt_buy_rate": 85.76,
-          "timestamp": "2025-03-11T04:45:07.085861"
+          "timestamp": "2025-03-11T06:49:01.123515"
         },
         {
           "bank": "HSBC",
-          "tt_buy_rate": 85.59,
-          "timestamp": "2025-03-11T04:45:08.627806"
+          "tt_buy_rate": 85.66,
+          "timestamp": "2025-03-11T06:49:02.712913"
         },
         {
           "bank": "Canara Bank",
-          "tt_buy_rate": 87.8575,
-          "timestamp": "2025-03-11T04:45:09.280194"
+          "tt_buy_rate": 87.9475,
+          "timestamp": "2025-03-11T06:49:03.561058"
         },
         {
           "bank": "ICICI Bank",
           "tt_buy_rate": 85.44,
-          "timestamp": "2025-03-11T04:45:10.009126"
+          "timestamp": "2025-03-11T06:49:03.030168"
         }
       ]
     },
