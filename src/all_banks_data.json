@@ -1,6 +1,41 @@
 {
   "historical_data": [
     {
+      "date": "2025-04-27",
+      "rates": [
+        {
+          "bank": "Kotak Bank",
+          "tt_buy_rate": 82.69,
+          "timestamp": "2025-04-27T04:44:16.261703"
+        },
+        {
+          "bank": "Indian Overseas Bank",
+          "tt_buy_rate": 85.04,
+          "timestamp": "2025-04-27T04:44:19.640827"
+        },
+        {
+          "bank": "IDFC First Bank",
+          "tt_buy_rate": 83.91,
+          "timestamp": "2025-04-27T04:44:19.857035"
+        },
+        {
+          "bank": "HSBC",
+          "tt_buy_rate": 83.53,
+          "timestamp": "2025-04-27T04:44:21.893973"
+        },
+        {
+          "bank": "Canara Bank",
+          "tt_buy_rate": 85.645,
+          "timestamp": "2025-04-27T04:44:22.338669"
+        },
+        {
+          "bank": "ICICI Bank",
+          "tt_buy_rate": 83.26,
+          "timestamp": "2025-04-27T04:44:22.970662"
+        }
+      ]
+    },
+    {
       "date": "2025-04-26",
       "rates": [
         {
@@ -487,41 +522,6 @@
           "bank": "Kotak Bank",
           "tt_buy_rate": 83.36,
           "timestamp": "2025-04-13T13:00:17.157192"
-        }
-      ]
-    },
-    {
-      "date": "2025-04-12",
-      "rates": [
-        {
-          "bank": "Kotak Bank",
-          "tt_buy_rate": 83.36,
-          "timestamp": "2025-04-12T06:46:45.848034"
-        },
-        {
-          "bank": "Indian Overseas Bank",
-          "tt_buy_rate": 85.78,
-          "timestamp": "2025-04-12T12:59:46.552716"
-        },
-        {
-          "bank": "IDFC First Bank",
-          "tt_buy_rate": 84.49,
-          "timestamp": "2025-04-12T12:59:47.336170"
-        },
-        {
-          "bank": "HSBC",
-          "tt_buy_rate": 84.56,
-          "timestamp": "2025-04-12T13:00:12.452532"
-        },
-        {
-          "bank": "Canara Bank",
-          "tt_buy_rate": 86.7,
-          "timestamp": "2025-04-12T13:00:14.382377"
-        },
-        {
-          "bank": "ICICI Bank",
-          "tt_buy_rate": 84.17,
-          "timestamp": "2025-04-12T13:00:13.248661"
         }
       ]
     }
