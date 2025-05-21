@@ -1,6 +1,41 @@
 {
   "historical_data": [
     {
+      "date": "2025-05-21",
+      "rates": [
+        {
+          "bank": "Kotak Bank",
+          "tt_buy_rate": 82.85,
+          "timestamp": "2025-05-21T04:48:30.008935"
+        },
+        {
+          "bank": "Indian Overseas Bank",
+          "tt_buy_rate": 85.18,
+          "timestamp": "2025-05-21T04:48:32.806653"
+        },
+        {
+          "bank": "IDFC First Bank",
+          "tt_buy_rate": 84.08,
+          "timestamp": "2025-05-21T04:48:33.381869"
+        },
+        {
+          "bank": "HSBC",
+          "tt_buy_rate": 83.82,
+          "timestamp": "2025-05-21T04:48:35.003788"
+        },
+        {
+          "bank": "ICICI Bank",
+          "tt_buy_rate": 83.71,
+          "timestamp": "2025-05-21T04:48:35.289823"
+        },
+        {
+          "bank": "Canara Bank",
+          "tt_buy_rate": 86.105,
+          "timestamp": "2025-05-21T04:48:35.899034"
+        }
+      ]
+    },
+    {
       "date": "2025-05-20",
       "rates": [
         {
@@ -482,41 +517,6 @@
           "bank": "ICICI Bank",
           "tt_buy_rate": 82.7,
           "timestamp": "2025-05-07T13:11:05.700547"
-        }
-      ]
-    },
-    {
-      "date": "2025-05-06",
-      "rates": [
-        {
-          "bank": "Kotak Bank",
-          "tt_buy_rate": 81.62,
-          "timestamp": "2025-05-06T13:08:28.038040"
-        },
-        {
-          "bank": "Indian Overseas Bank",
-          "tt_buy_rate": 84.1,
-          "timestamp": "2025-05-06T13:08:30.591772"
-        },
-        {
-          "bank": "IDFC First Bank",
-          "tt_buy_rate": 82.91,
-          "timestamp": "2025-05-06T13:08:32.545193"
-        },
-        {
-          "bank": "HSBC",
-          "tt_buy_rate": 82.72,
-          "timestamp": "2025-05-06T13:08:33.870331"
-        },
-        {
-          "bank": "Canara Bank",
-          "tt_buy_rate": 84.85,
-          "timestamp": "2025-05-06T13:08:34.915944"
-        },
-        {
-          "bank": "ICICI Bank",
-          "tt_buy_rate": 82.41,
-          "timestamp": "2025-05-06T13:08:36.942847"
         }
       ]
     }
