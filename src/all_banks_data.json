@@ -1,6 +1,41 @@
 {
   "historical_data": [
     {
+      "date": "2025-08-11",
+      "rates": [
+        {
+          "bank": "Kotak Bank",
+          "tt_buy_rate": 84.84,
+          "timestamp": "2025-08-11T05:02:17.153616"
+        },
+        {
+          "bank": "IDFC First Bank",
+          "tt_buy_rate": 85.96,
+          "timestamp": "2025-08-11T05:02:20.228199"
+        },
+        {
+          "bank": "Indian Overseas Bank",
+          "tt_buy_rate": 87.42,
+          "timestamp": "2025-08-11T05:02:27.102062"
+        },
+        {
+          "bank": "Canara Bank",
+          "tt_buy_rate": 87.3925,
+          "timestamp": "2025-08-11T05:02:29.082014"
+        },
+        {
+          "bank": "HSBC",
+          "tt_buy_rate": 85.86,
+          "timestamp": "2025-08-11T05:02:29.366575"
+        },
+        {
+          "bank": "ICICI Bank",
+          "tt_buy_rate": 85.88,
+          "timestamp": "2025-08-11T05:02:29.810977"
+        }
+      ]
+    },
+    {
       "date": "2025-08-10",
       "rates": [
         {
@@ -487,41 +522,6 @@
           "bank": "ICICI Bank",
           "tt_buy_rate": 84.91,
           "timestamp": "2025-07-28T13:23:41.258990"
-        }
-      ]
-    },
-    {
-      "date": "2025-07-27",
-      "rates": [
-        {
-          "bank": "Kotak Bank",
-          "tt_buy_rate": 83.79,
-          "timestamp": "2025-07-27T13:09:12.525647"
-        },
-        {
-          "bank": "Indian Overseas Bank",
-          "tt_buy_rate": 86.26,
-          "timestamp": "2025-07-27T13:09:14.671506"
-        },
-        {
-          "bank": "IDFC First Bank",
-          "tt_buy_rate": 84.96,
-          "timestamp": "2025-07-27T13:09:14.508920"
-        },
-        {
-          "bank": "HSBC",
-          "tt_buy_rate": 84.87,
-          "timestamp": "2025-07-27T13:09:16.130458"
-        },
-        {
-          "bank": "Canara Bank",
-          "tt_buy_rate": 86.22,
-          "timestamp": "2025-07-27T13:09:16.665564"
-        },
-        {
-          "bank": "ICICI Bank",
-          "tt_buy_rate": 84.92,
-          "timestamp": "2025-07-27T13:09:18.695805"
         }
       ]
     }
