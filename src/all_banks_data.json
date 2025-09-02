@@ -1,6 +1,41 @@
 {
   "historical_data": [
     {
+      "date": "2025-09-02",
+      "rates": [
+        {
+          "bank": "Kotak Bank",
+          "tt_buy_rate": 85.47,
+          "timestamp": "2025-09-02T04:46:01.498928"
+        },
+        {
+          "bank": "Indian Overseas Bank",
+          "tt_buy_rate": 87.98,
+          "timestamp": "2025-09-02T04:46:02.312539"
+        },
+        {
+          "bank": "IDFC First Bank",
+          "tt_buy_rate": 86.54,
+          "timestamp": "2025-09-02T04:46:04.182356"
+        },
+        {
+          "bank": "Canara Bank",
+          "tt_buy_rate": 87.865,
+          "timestamp": "2025-09-02T04:46:06.769921"
+        },
+        {
+          "bank": "HSBC",
+          "tt_buy_rate": 86.51,
+          "timestamp": "2025-09-02T04:46:06.803896"
+        },
+        {
+          "bank": "ICICI Bank",
+          "tt_buy_rate": 86.45,
+          "timestamp": "2025-09-02T04:46:09.058499"
+        }
+      ]
+    },
+    {
       "date": "2025-09-01",
       "rates": [
         {
@@ -487,41 +522,6 @@
           "bank": "ICICI Bank",
           "tt_buy_rate": 85.57,
           "timestamp": "2025-08-19T13:07:50.193950"
-        }
-      ]
-    },
-    {
-      "date": "2025-08-18",
-      "rates": [
-        {
-          "bank": "Kotak Bank",
-          "tt_buy_rate": 84.64,
-          "timestamp": "2025-08-18T13:13:37.942978"
-        },
-        {
-          "bank": "IDFC First Bank",
-          "tt_buy_rate": 85.78,
-          "timestamp": "2025-08-18T13:13:40.931245"
-        },
-        {
-          "bank": "Indian Overseas Bank",
-          "tt_buy_rate": 87.2,
-          "timestamp": "2025-08-18T13:14:05.138223"
-        },
-        {
-          "bank": "HSBC",
-          "tt_buy_rate": 85.75,
-          "timestamp": "2025-08-18T13:14:05.926978"
-        },
-        {
-          "bank": "Canara Bank",
-          "tt_buy_rate": 87.07,
-          "timestamp": "2025-08-18T13:14:07.075407"
-        },
-        {
-          "bank": "ICICI Bank",
-          "tt_buy_rate": 85.75,
-          "timestamp": "2025-08-18T13:14:08.833819"
         }
       ]
     }
