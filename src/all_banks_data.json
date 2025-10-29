@@ -6,17 +6,17 @@
         {
           "bank": "HSBC",
           "tt_buy_rate": 86.62,
-          "timestamp": "2025-10-29T04:48:51.729247"
+          "timestamp": "2025-10-29T06:53:33.456912"
         },
         {
           "bank": "ICICI Bank",
           "tt_buy_rate": 86.6,
-          "timestamp": "2025-10-29T04:48:53.750124"
+          "timestamp": "2025-10-29T06:53:36.686697"
         },
         {
           "bank": "Canara Bank",
-          "tt_buy_rate": 88.005,
-          "timestamp": "2025-10-29T04:48:53.930740"
+          "tt_buy_rate": 87.97,
+          "timestamp": "2025-10-29T06:53:35.924358"
         }
       ]
     },
