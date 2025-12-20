@@ -6,22 +6,22 @@
         {
           "bank": "IDFC First Bank",
           "tt_buy_rate": 87.66,
-          "timestamp": "2025-12-20T04:49:02.739323"
+          "timestamp": "2025-12-20T06:52:03.811972"
         },
         {
           "bank": "HSBC",
           "tt_buy_rate": 88.27,
-          "timestamp": "2025-12-20T04:49:12.009628"
+          "timestamp": "2025-12-20T06:52:12.598560"
         },
         {
           "bank": "ICICI Bank",
           "tt_buy_rate": 87.9,
-          "timestamp": "2025-12-20T04:49:12.867501"
+          "timestamp": "2025-12-20T06:52:13.519852"
         },
         {
           "bank": "Canara Bank",
           "tt_buy_rate": 90.575,
-          "timestamp": "2025-12-20T04:49:19.093163"
+          "timestamp": "2025-12-20T06:52:20.138050"
         }
       ]
     },
