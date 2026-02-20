@@ -10,18 +10,18 @@
         },
         {
           "bank": "IDFC First Bank",
-          "tt_buy_rate": 89.31,
-          "timestamp": "2026-02-20T07:31:42.983851"
+          "tt_buy_rate": 89.34,
+          "timestamp": "2026-02-20T13:41:36.744266"
         },
         {
           "bank": "HSBC",
           "tt_buy_rate": 89.21,
-          "timestamp": "2026-02-20T07:31:51.734461"
+          "timestamp": "2026-02-20T13:41:50.650005"
         },
         {
           "bank": "ICICI Bank",
           "tt_buy_rate": 89.21,
-          "timestamp": "2026-02-20T07:31:56.498169"
+          "timestamp": "2026-02-20T13:41:53.132435"
         }
       ]
     },
