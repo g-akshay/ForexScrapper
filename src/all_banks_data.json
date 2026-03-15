@@ -6,22 +6,22 @@
         {
           "bank": "Kotak Bank",
           "tt_buy_rate": 89.6,
-          "timestamp": "2026-03-15T05:51:33.890890"
+          "timestamp": "2026-03-15T07:28:40.988908"
         },
         {
           "bank": "IDFC First Bank",
           "tt_buy_rate": 90.78,
-          "timestamp": "2026-03-15T05:51:38.820732"
+          "timestamp": "2026-03-15T07:28:47.786333"
         },
         {
           "bank": "HSBC",
           "tt_buy_rate": 90.56,
-          "timestamp": "2026-03-15T05:51:47.381895"
+          "timestamp": "2026-03-15T07:28:56.745540"
         },
         {
           "bank": "ICICI Bank",
           "tt_buy_rate": 90.7,
-          "timestamp": "2026-03-15T05:51:50.617278"
+          "timestamp": "2026-03-15T07:28:58.178343"
         }
       ]
     },
