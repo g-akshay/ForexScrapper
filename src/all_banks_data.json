@@ -1,6 +1,36 @@
 {
   "historical_data": [
     {
+      "date": "2026-09-12",
+      "rates": [
+        {
+          "bank": "Kotak Bank",
+          "tt_buy_rate": 93.04,
+          "timestamp": "2026-09-12T09:28:48.464963"
+        },
+        {
+          "bank": "IDFC First Bank",
+          "tt_buy_rate": 93.83,
+          "timestamp": "2026-09-12T09:28:55.107289"
+        },
+        {
+          "bank": "Canara Bank",
+          "tt_buy_rate": 95.3175,
+          "timestamp": "2026-09-12T09:29:03.086303"
+        },
+        {
+          "bank": "HSBC",
+          "tt_buy_rate": 93.9,
+          "timestamp": "2026-09-12T09:29:05.534278"
+        },
+        {
+          "bank": "ICICI Bank",
+          "tt_buy_rate": 94.16,
+          "timestamp": "2026-09-12T09:29:06.073800"
+        }
+      ]
+    },
+    {
       "date": "2026-09-11",
       "rates": [
         {
@@ -417,36 +447,6 @@
           "bank": "ICICI Bank",
           "tt_buy_rate": 93.7,
           "timestamp": "2026-08-29T11:43:42.842826"
-        }
-      ]
-    },
-    {
-      "date": "2026-08-28",
-      "rates": [
-        {
-          "bank": "Kotak Bank",
-          "tt_buy_rate": 92.81,
-          "timestamp": "2026-08-28T17:32:31.564637"
-        },
-        {
-          "bank": "IDFC First Bank",
-          "tt_buy_rate": 93.66,
-          "timestamp": "2026-08-28T17:32:37.397584"
-        },
-        {
-          "bank": "Canara Bank",
-          "tt_buy_rate": 95.09,
-          "timestamp": "2026-08-28T17:32:45.140891"
-        },
-        {
-          "bank": "HSBC",
-          "tt_buy_rate": 93.71,
-          "timestamp": "2026-08-28T17:32:46.129675"
-        },
-        {
-          "bank": "ICICI Bank",
-          "tt_buy_rate": 93.7,
-          "timestamp": "2026-08-28T17:32:47.949344"
         }
       ]
     }
